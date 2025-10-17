@@ -1,3 +1,164 @@
-<!doctype html>
-<!-- The full TopUp Hunter HTML from the previous answer would go here -->
-TopUp Hunter Website
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TopUp Hunter | Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background: linear-gradient(135deg, #007aff, #00c6ff);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 40px;
+    }
+
+    .left h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+    }
+
+    .left p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+      text-align: center;
+      max-width: 350px;
+    }
+
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f8f9fb;
+      padding: 40px;
+    }
+
+    .login-box {
+      width: 100%;
+      max-width: 360px;
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-group label {
+      display: block;
+      margin-bottom: 8px;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      outline: none;
+      transition: all 0.3s ease;
+    }
+
+    .input-group input:focus {
+      border-color: #007aff;
+      box-shadow: 0 0 0 3px rgba(0, 122, 255, 0.2);
+    }
+
+    .btn {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: linear-gradient(135deg, #007aff, #00c6ff);
+      color: white;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 122, 255, 0.3);
+    }
+
+    .note {
+      margin-top: 15px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #777;
+    }
+
+    @media (max-width: 800px) {
+      body {
+        flex-direction: column;
+      }
+      .left, .right {
+        flex: none;
+        width: 100%;
+        padding: 30px;
+      }
+      .left {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="left">
+    <h1>TopUp Hunter</h1>
+    <p>"Nikmati kemudahan tambah nilai digital — cepat, mudah, dan selamat."</p>
+  </div>
+
+  <div class="right">
+    <div class="login-box">
+      <h2>Log Masuk Akaun</h2>
+      <form>
+        <div class="input-group">
+          <label for="email">Emel</label>
+          <input type="email" id="email" placeholder="Masukkan emel anda" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Kata Laluan</label>
+          <input type="password" id="password" placeholder="Masukkan kata laluan" required />
+        </div>
+        <button type="button" class="btn" onclick="mockLogin()">Log Masuk</button>
+      </form>
+      <p class="note">Belum ada akaun? <a href="#">Daftar Sekarang</a></p>
+    </div>
+  </div>
+
+  <script>
+    function mockLogin() {
+      alert("Login berjaya! (demo sahaja)");
+    }
+  </script>
+</body>
+</html>
